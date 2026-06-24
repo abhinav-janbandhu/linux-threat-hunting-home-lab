@@ -69,31 +69,24 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 ## Lab Architecture
 
 ```text
-                    Home Lab Environment
+                 Linux Threat Hunting Home Lab
 
-                    +-------------------+
-                    |   Windows 11 Host |
-                    |   Oracle VirtualBox|
-                    +---------+---------+
-                              |
-             +----------------+----------------+
-             |                                 |
-     +-------+--------+               +--------+-------+
-     |  Kali Linux    |               | Ubuntu Server  |
-     | (Attacker VM)  |<------------->| (Target VM)    |
-     +----------------+               +----------------+
-                                              |
-                                              |
-                                      +-------+-------+
-                                      |    Auditd     |
-                                      | Linux Audit   |
-                                      +-------+-------+
-                                              |
-                                              |
-                                      +-------+-------+
-                                      | Threat Hunting|
-                                      | Investigation |
-                                      +---------------+
+                  Windows 11 Host (VirtualBox)
+                           │
+          ┌────────────────┴────────────────┐
+          │                                 │
+     Kali Linux                       Ubuntu Server
+   (Attacker VM)                     (Target VM)
+          │                                 │
+          └──────────────┬──────────────────┘
+                         │
+                    Linux Auditd
+                         │
+                  Threat Hunting
+                         │
+                Incident Investigation
+                         │
+                 MITRE ATT&CK Mapping
 ```
 ---
 
