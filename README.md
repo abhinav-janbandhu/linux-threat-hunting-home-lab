@@ -2,6 +2,12 @@
 
 > A hands-on Blue Team project focused on Linux threat hunting, incident response, and attacker behavior simulation using Kali Linux, Ubuntu Server, and Auditd.
 
+![Platform](https://img.shields.io/badge/Platform-VirtualBox-blue)
+![OS](https://img.shields.io/badge/Linux-Ubuntu%20%7C%20Kali-green)
+![Security](https://img.shields.io/badge/Focus-Threat%20Hunting-red)
+![Framework](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 ---
 
 ## Project Overview
