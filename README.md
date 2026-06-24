@@ -37,7 +37,8 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 
 ---
 
-# Lab Architecture
+
+## Lab Architecture
 
 ```text
                     Home Lab Environment
@@ -68,24 +69,37 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 ```
 ---
 
-# Labs Completed
+## Tools Used
 
-| Lab | Title | Key Skills |
-|------|-------|------------|
-| Lab 21 | Incident Investigation Workflow | Log Analysis, Investigation |
-| Lab 22 | Hypothesis-Driven Threat Hunting | Threat Hunting Methodology |
-| Lab 23 | Cron Persistence Hunting | Linux Persistence Detection |
-| Lab 24 | SSH Persistence Hunting | Authorized Keys Analysis |
-| Lab 25 | Lateral Movement & Network Discovery | Discovery, Network Enumeration |
-| Lab 26 | Credential Access & Sensitive Data Hunting | Credential Discovery, File Hunting |
-| Lab 27 | Data Staging & Collection Hunting | Collection, Archive Creation |
-| Lab 28 | Exfiltration Detection Concepts | Data Movement, Exfiltration Detection |
-| Lab 29 | End-to-End Attack Chain Simulation | Attack Lifecycle Analysis |
-| Lab 30 | Blue Team Capstone Investigation | Incident Response, Timeline Reconstruction |
+| Category | Tools |
+|----------|-------|
+| Operating Systems | Windows 11, Ubuntu Server, Kali Linux |
+| Virtualization | Oracle VirtualBox |
+| Monitoring | Linux Auditd |
+| Investigation | ausearch, aureport |
+| Networking | SSH, Nmap |
+| Framework | MITRE ATT&CK |
+---
+
+## Labs Completed
+
+| Lab    | Title                                      | Primary Skill               |
+| ------ | ------------------------------------------ | --------------------------- |
+| Lab 21 | Incident Investigation Workflow            | Incident Investigation      |
+| Lab 22 | Hypothesis-Driven Threat Hunting           | Threat Hunting              |
+| Lab 23 | Cron Persistence Hunting                   | Linux Persistence           |
+| Lab 24 | SSH Persistence Hunting                    | SSH Security                |
+| Lab 25 | Lateral Movement & Network Discovery       | Discovery & Enumeration     |
+| Lab 26 | Credential Access & Sensitive Data Hunting | Credential Access Detection |
+| Lab 27 | Data Staging & Collection Hunting          | Data Collection & Staging   |
+| Lab 28 | Exfiltration Detection Concepts            | Exfiltration Detection      |
+| Lab 29 | End-to-End Attack Chain Simulation         | Attack Chain Analysis       |
+| Lab 30 | Blue Team Capstone Investigation           | Incident Response           |
+
 
 ---
 
-# Skills Demonstrated
+# Technical Skills Demonstrated
 
 ## Threat Hunting
 
