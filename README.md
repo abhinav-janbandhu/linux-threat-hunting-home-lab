@@ -66,27 +66,27 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 ---
 
 
-## Lab Architecture
+## Threat Hunting Lab Architecture
 
 ```text
-                 Linux Threat Hunting Home Lab
+         Linux Threat Hunting Home Lab
 
-                  Windows 11 Host (VirtualBox)
-                           │
-          ┌────────────────┴────────────────┐
-          │                                 │
-     Kali Linux                       Ubuntu Server
-   (Attacker VM)                     (Target VM)
-          │                                 │
-          └──────────────┬──────────────────┘
-                         │
-                    Linux Auditd
-                         │
-                  Threat Hunting
-                         │
-                Incident Investigation
-                         │
-                 MITRE ATT&CK Mapping
+           Windows 11 Host (VirtualBox)
+                     │
+      ┌──────────────┴──────────────┐
+      │                             │
+┌──────────────┐             ┌──────────────┐
+│ Kali Linux   │──────────▶  │ Ubuntu Server│
+│ Attacker VM  │   Attack    │  Target VM   │
+└──────────────┘             └──────┬───────┘
+                                    │
+                              Linux Auditd
+                                    │
+                         Threat Hunting & Detection
+                                    │
+                        Incident Investigation
+                                    │
+                         MITRE ATT&CK Mapping
 ```
 ---
 
