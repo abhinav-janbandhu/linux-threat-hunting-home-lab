@@ -20,3 +20,49 @@ The primary objective of this project was to strengthen practical Blue Team skil
 - Security Investigation
 
 Rather than focusing only on offensive commands, each lab emphasizes how defenders can detect, investigate, and understand attacker behavior.
+
+---
+
+# Lab Environment
+
+| Component | Technology |
+|-----------|------------|
+| Host OS | Windows 11 |
+| Hypervisor | Oracle VirtualBox |
+| Attacker VM | Kali Linux |
+| Target VM | Ubuntu Server |
+| Monitoring | Linux Auditd |
+| Investigation | ausearch, aureport |
+| Framework | MITRE ATT&CK |
+
+---
+
+# Lab Architecture
+
+```text
+                    Home Lab Environment
+
+                    +-------------------+
+                    |   Windows 11 Host |
+                    |   Oracle VirtualBox|
+                    +---------+---------+
+                              |
+             +----------------+----------------+
+             |                                 |
+     +-------+--------+               +--------+-------+
+     |  Kali Linux    |               | Ubuntu Server  |
+     | (Attacker VM)  |<------------->| (Target VM)    |
+     +----------------+               +----------------+
+                                              |
+                                              |
+                                      +-------+-------+
+                                      |    Auditd     |
+                                      | Linux Audit   |
+                                      +-------+-------+
+                                              |
+                                              |
+                                      +-------+-------+
+                                      | Threat Hunting|
+                                      | Investigation |
+                                      +---------------+
+```
