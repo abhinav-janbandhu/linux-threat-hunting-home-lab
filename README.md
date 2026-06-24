@@ -23,7 +23,7 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component | Technology |
 |-----------|------------|
@@ -99,32 +99,82 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 
 ---
 
-# Technical Skills Demonstrated
+## Technical Skills Demonstrated
 
-## Threat Hunting
+### Threat Hunting
 
 - Hypothesis-driven threat hunting
 - Linux audit log analysis
 - Attack timeline reconstruction
 - Threat investigation
 
-## Linux Security
+### Linux Security
 
 - Auditd configuration
 - Command execution monitoring
 - Persistence detection
 - SSH security analysis
 
-## Incident Response
+### Incident Response
 
 - Evidence collection
 - Root cause analysis
 - Indicators of Compromise (IOCs)
 - MITRE ATT&CK mapping
 
-## Blue Team Operations
+### Blue Team Operations
 
 - Credential access hunting
 - Data collection detection
 - Exfiltration investigation
 - Attack chain reconstruction
+
+---
+
+## MITRE ATT&CK Coverage
+
+| Tactic | Techniques Practiced |
+|---------|----------------------|
+| Discovery | System Discovery, Network Discovery |
+| Persistence | Cron Jobs, SSH Authorized Keys |
+| Credential Access | Unsecured Credentials |
+| Collection | Local Data Collection, Archive Creation |
+| Exfiltration | Data Movement & Exfiltration Concepts |
+
+---
+
+## Repository Structure
+
+```text
+linux-threat-hunting-home-lab/
+│
+├── Lab21-Incident-Investigation/
+├── Lab22-Threat-Hunting/
+├── Lab23-Cron-Persistence/
+├── Lab24-SSH-Persistence/
+├── Lab25-Lateral-Movement/
+├── Lab26-Credential-Access/
+├── Lab27-Data-Staging/
+├── Lab28-Exfiltration/
+├── Lab29-Attack-Chain/
+├── Lab30-Capstone-Investigation/
+└── screenshots/
+```
+---
+
+## Key Outcomes
+
+- Built and documented a Linux Threat Hunting home lab.
+- Simulated attacker behavior across multiple MITRE ATT&CK tactics.
+- Investigated persistence, credential access, collection, and exfiltration activities.
+- Reconstructed attack timelines using Linux Auditd.
+- Produced structured incident investigation documentation for every lab.
+
+
+---
+
+## About Me
+
+I'm a cybersecurity professional focused on Blue Team operations, threat hunting, detection engineering, and security leadership.
+
+This project is part of my continuous learning journey to strengthen hands-on defensive security skills through practical home lab simulations.
