@@ -27,6 +27,17 @@ The primary objective of this project was to strengthen practical Blue Team skil
 
 Rather than focusing only on offensive commands, each lab emphasizes how defenders can detect, investigate, and understand attacker behavior.
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Lab Environment](#lab-environment)
+- [Lab Architecture](#lab-architecture)
+- [Tools Used](#tools-used)
+- [Labs Completed](#labs-completed)
+- [Technical Skills Demonstrated](#technical-skills-demonstrated)
+- [MITRE ATT&CK Coverage](#mitre-attck-coverage)
+- [Repository Structure](#repository-structure)
+- [Key Outcomes](#key-outcomes)
 ---
 
 ## Lab Environment
