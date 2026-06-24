@@ -38,6 +38,17 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 - [MITRE ATT&CK Coverage](#mitre-attck-coverage)
 - [Repository Structure](#repository-structure)
 - [Key Outcomes](#key-outcomes)
+
+---
+
+## Project Highlights
+
+- 🔍 Simulated a complete Linux attack lifecycle across 10 structured labs.
+- 🛡️ Performed hypothesis-driven threat hunting using Linux Auditd.
+- 🔐 Investigated persistence techniques including Cron Jobs and SSH Authorized Keys.
+- 🔎 Simulated credential discovery, data staging, and exfiltration scenarios.
+- 📊 Mapped attacker behavior to the MITRE ATT&CK framework.
+- 📝 Produced investigation reports and documented findings for every lab.
 ---
 
 ## Lab Environment
@@ -187,11 +198,31 @@ linux-threat-hunting-home-lab/
 - Reconstructed attack timelines using Linux Auditd.
 - Produced structured incident investigation documentation for every lab.
 
-
 ---
 
-## About Me
+## Learning Outcomes
 
-I'm a cybersecurity professional focused on Blue Team operations, threat hunting, detection engineering, and security leadership.
+Through this project, I strengthened practical experience in:
 
-This project is part of my continuous learning journey to strengthen hands-on defensive security skills through practical home lab simulations.
+- Linux Threat Hunting
+- Incident Response Methodology
+- Security Investigation
+- Linux Auditd Monitoring
+- Attack Timeline Reconstruction
+- MITRE ATT&CK Mapping
+- Blue Team Documentation
+- Security Reporting
+---
+
+
+## Future Enhancements
+
+The next phase of this home lab will focus on Cloud & Platform Security, including:
+
+- AWS IAM Security
+- CloudTrail Log Analysis
+- Amazon GuardDuty
+- S3 Security Monitoring
+- Cloud Threat Hunting
+- Detection Engineering
+- Security Automation
