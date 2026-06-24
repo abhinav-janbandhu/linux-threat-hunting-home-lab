@@ -66,3 +66,51 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
                                       | Investigation |
                                       +---------------+
 ```
+---
+
+# Labs Completed
+
+| Lab | Title | Key Skills |
+|------|-------|------------|
+| Lab 21 | Incident Investigation Workflow | Log Analysis, Investigation |
+| Lab 22 | Hypothesis-Driven Threat Hunting | Threat Hunting Methodology |
+| Lab 23 | Cron Persistence Hunting | Linux Persistence Detection |
+| Lab 24 | SSH Persistence Hunting | Authorized Keys Analysis |
+| Lab 25 | Lateral Movement & Network Discovery | Discovery, Network Enumeration |
+| Lab 26 | Credential Access & Sensitive Data Hunting | Credential Discovery, File Hunting |
+| Lab 27 | Data Staging & Collection Hunting | Collection, Archive Creation |
+| Lab 28 | Exfiltration Detection Concepts | Data Movement, Exfiltration Detection |
+| Lab 29 | End-to-End Attack Chain Simulation | Attack Lifecycle Analysis |
+| Lab 30 | Blue Team Capstone Investigation | Incident Response, Timeline Reconstruction |
+
+---
+
+# Skills Demonstrated
+
+## Threat Hunting
+
+- Hypothesis-driven threat hunting
+- Linux audit log analysis
+- Attack timeline reconstruction
+- Threat investigation
+
+## Linux Security
+
+- Auditd configuration
+- Command execution monitoring
+- Persistence detection
+- SSH security analysis
+
+## Incident Response
+
+- Evidence collection
+- Root cause analysis
+- Indicators of Compromise (IOCs)
+- MITRE ATT&CK mapping
+
+## Blue Team Operations
+
+- Credential access hunting
+- Data collection detection
+- Exfiltration investigation
+- Attack chain reconstruction
