@@ -33,7 +33,12 @@ whoami
 hostname
 id
 ```
-![Attack Simulation](../screenshots/Lab22-Hypothesis-Driven-Threat-Hunting/01-attack-simulation-ssh-login.png.png)
+
+### Attack Simulation Evidence
+
+The attacker connected from Kali Linux to the Ubuntu target and executed basic reconnaissance commands to identify the current user, system hostname, and operating system details.
+
+![Attack Simulation](../Screenshots/Lab22-Hypothesis-Driven-Threat-Hunting/01-attack-simulation-ssh-login.png)
 
 ---
 
@@ -47,11 +52,19 @@ Verified using:
 sudo auditctl -l
 ```
 
-A command execution monitoring rule was then configured:
+A command execution monitoring rule was configured to capture Linux process execution events:
 
 ```bash
 sudo auditctl -a always,exit -F arch=b64 -S execve -k command_exec
 ```
+
+### Auditd Rule Configuration
+
+Configured Auditd to monitor Linux command execution using the `execve` system call.
+
+![Auditd Rule Configuration](../Screenshots/Lab22-Hypothesis-Driven-Threat-Hunting/02-auditd-command-execution-rule.png)
+
+### Evidence Collection
 
 Evidence was collected using:
 
@@ -63,14 +76,17 @@ sudo ausearch -k command_exec --raw
 
 ## Evidence Collected
 
-Auditd successfully captured execution of:
+Auditd successfully captured execution of the following reconnaissance commands:
 
 - `whoami`
 - `hostname`
 - `id`
 
+### Threat Hunting Evidence
 
-This validated that command execution telemetry was being recorded successfully.
+Auditd successfully recorded the executed reconnaissance commands, validating the hunting hypothesis and confirming that command execution telemetry was available for investigation.
+
+![Threat Hunting Evidence](../Screenshots/Lab22-Hypothesis-Driven-Threat-Hunting/03-command-execution-evidence.png)
 
 ---
 
@@ -78,33 +94,36 @@ This validated that command execution telemetry was being recorded successfully.
 
 | Activity | Technique |
 |----------|-----------|
-| Account Discovery | T1033 |
-| System Information Discovery | T1082 |
+| Account Discovery | T1033 – Account Discovery |
+| System Information Discovery | T1082 – System Information Discovery |
+
+The observed reconnaissance activity aligns with the **MITRE ATT&CK Discovery** tactic, where attackers gather information about the target system after gaining initial access.
 
 ---
 
 ## Detection Opportunities
 
 - Monitor Linux command execution using Auditd.
-- Detect reconnaissance commands executed immediately after login.
-- Identify abnormal use of system discovery utilities.
-- Correlate command execution with SSH login events.
+- Detect reconnaissance commands executed immediately after SSH login.
+- Correlate command execution with user authentication events.
+- Alert on abnormal use of Linux system discovery utilities.
 
 ---
 
 ## Key Findings
 
-- The initial threat hunt exposed a telemetry gap.
-- Auditd monitoring was configured to capture command execution events.
-- Reconnaissance commands were successfully detected.
+- Initial investigation revealed that Auditd was not monitoring command execution.
+- A custom Auditd rule was configured to capture `execve` system calls.
+- Reconnaissance commands (`whoami`, `hostname`, and `id`) were successfully detected.
 - The hunting hypothesis was validated using Linux audit logs.
 
 ---
 
 ## Skills Demonstrated
 
-- Threat Hunting
-- Linux Auditd
+- Hypothesis-Driven Threat Hunting
+- Linux Auditd Configuration
 - Command Execution Monitoring
-- Log Analysis
+- Linux Log Analysis
 - MITRE ATT&CK Mapping
+- Threat Investigation
