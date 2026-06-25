@@ -33,7 +33,7 @@ whoami
 hostname
 id
 ```
-
+![Attack Simulation](../screenshots/Lab22-Hypothesis-Driven-Threat-Hunting/01-attack-simulation-ssh-login.png.png)
 
 ---
 
