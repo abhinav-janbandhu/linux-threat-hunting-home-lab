@@ -1,14 +1,14 @@
 # Linux Threat Hunting Home Lab
 
-> A hands-on Blue Team project focused on Linux threat hunting, incident response, and attacker behavior simulation using Kali Linux, Ubuntu Server, and Auditd.
+> A practical Blue Team home lab that simulates the complete Linux attack lifecycle—from reconnaissance and persistence to credential access, data staging, and exfiltration—while demonstrating how defenders detect, investigate, and map attacker behavior using Linux Auditd and the MITRE ATT&CK framework.
 
+![Blue Team](https://img.shields.io/badge/Role-Blue%20Team-blue)
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox-blue)
 ![OS](https://img.shields.io/badge/Linux-Ubuntu%20%7C%20Kali-green)
 ![Security](https://img.shields.io/badge/Focus-Threat%20Hunting-red)
 ![Framework](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
----
 
 ## Project Overview
 
@@ -29,15 +29,25 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Lab Environment](#lab-environment)
-- [Lab Architecture](#lab-architecture)
-- [Tools Used](#tools-used)
-- [Labs Completed](#labs-completed)
-- [Technical Skills Demonstrated](#technical-skills-demonstrated)
-- [MITRE ATT&CK Coverage](#mitre-attck-coverage)
-- [Repository Structure](#repository-structure)
-- [Key Outcomes](#key-outcomes)
+- [Linux Threat Hunting Home Lab](#linux-threat-hunting-home-lab)
+  - [Project Overview](#project-overview)
+  - [Table of Contents](#table-of-contents)
+  - [Project Highlights](#project-highlights)
+  - [Project Metrics](#project-metrics)
+  - [Project Goals](#project-goals)
+  - [Lab Environment](#lab-environment)
+  - [Threat Hunting Lab Architecture](#threat-hunting-lab-architecture)
+  - [Tools Used](#tools-used)
+  - [| Framework | MITRE ATT\&CK |](#-framework--mitre-attck-)
+  - [Labs Completed](#labs-completed)
+  - [Skills Gained](#skills-gained)
+  - [MITRE ATT\&CK Coverage](#mitre-attck-coverage)
+  - [Repository Structure](#repository-structure)
+  - [Key Outcomes](#key-outcomes)
+  - [Learning Outcomes](#learning-outcomes)
+  - [Future Enhancements](#future-enhancements)
+  - [Portfolio](#portfolio)
+  - [Final Thoughts](#final-thoughts)
 
 ---
 
@@ -49,6 +59,33 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 - 🔎 Simulated credential discovery, data staging, and exfiltration scenarios.
 - 📊 Mapped attacker behavior to the MITRE ATT&CK framework.
 - 📝 Produced investigation reports and documented findings for every lab.
+
+---
+
+## Project Metrics
+
+| Metric | Value |
+|--------|------:|
+| Hands-on Labs Completed | 10 |
+| Investigation Reports | 10 |
+| Linux VMs | 2 (Kali Linux & Ubuntu Server) |
+| MITRE ATT&CK Tactics Covered | 5 |
+| MITRE ATT&CK Techniques Demonstrated | 8+ |
+| Investigation Screenshots | 20+ |
+| Attack Lifecycle | End-to-End |
+| Documentation | 100% Complete |
+
+---
+
+## Project Goals
+
+This project was designed to:
+
+- Build practical Linux threat hunting skills.
+- Simulate realistic attacker behavior in a controlled environment.
+- Develop incident investigation and evidence collection workflows.
+- Practice mapping attacker techniques to the MITRE ATT&CK framework.
+- Improve Blue Team documentation and reporting skills.
 ---
 
 ## Lab Environment
@@ -104,63 +141,44 @@ Rather than focusing only on offensive commands, each lab emphasizes how defende
 
 ## Labs Completed
 
-| Lab    | Title                                      | Primary Skill               |
-| ------ | ------------------------------------------ | --------------------------- |
-| Lab 21 | Incident Investigation Workflow            | Incident Investigation      |
-| Lab 22 | Hypothesis-Driven Threat Hunting           | Threat Hunting              |
-| Lab 23 | Cron Persistence Hunting                   | Linux Persistence           |
-| Lab 24 | SSH Persistence Hunting                    | SSH Security                |
-| Lab 25 | Lateral Movement & Network Discovery       | Discovery & Enumeration     |
-| Lab 26 | Credential Access & Sensitive Data Hunting | Credential Access Detection |
-| Lab 27 | Data Staging & Collection Hunting          | Data Collection & Staging   |
-| Lab 28 | Exfiltration Detection Concepts            | Exfiltration Detection      |
-| Lab 29 | End-to-End Attack Chain Simulation         | Attack Chain Analysis       |
-| Lab 30 | Blue Team Capstone Investigation           | Incident Response           |
+| Lab | Documentation | Primary Skill |
+|-----|---------------|---------------|
+| Lab 21 | [Incident Investigation Workflow](Lab21-Incident-Investigation/) | Incident Investigation |
+| Lab 22 | [Hypothesis-Driven Threat Hunting](Lab22-Threat-Hunting/) | Threat Hunting |
+| Lab 23 | [Cron Persistence Hunting](Lab23-Cron-Persistence/) | Linux Persistence |
+| Lab 24 | [SSH Persistence Hunting](Lab24-SSH-Persistence/) | SSH Security |
+| Lab 25 | [Lateral Movement & Network Discovery](Lab25-Lateral-Movement/) | Discovery & Enumeration |
+| Lab 26 | [Credential Access & Sensitive Data Hunting](Lab26-Credential-Access/) | Credential Access Detection |
+| Lab 27 | [Data Staging & Collection Hunting](Lab27-Data-Staging/) | Data Collection & Staging |
+| Lab 28 | [Exfiltration Detection Concepts](Lab28-Exfiltration/) | Exfiltration Detection |
+| Lab 29 | [End-to-End Attack Chain Simulation](Lab29-Attack-Chain/) | Attack Chain Analysis |
+| Lab 30 | [Blue Team Capstone Investigation](Lab30-Capstone-Investigation/) | Incident Response |
 
 
 ---
 
-## Technical Skills Demonstrated
+## Skills Gained
 
-### Threat Hunting
-
-- Hypothesis-driven threat hunting
-- Linux audit log analysis
-- Attack timeline reconstruction
-- Threat investigation
-
-### Linux Security
-
-- Auditd configuration
-- Command execution monitoring
-- Persistence detection
-- SSH security analysis
-
-### Incident Response
-
-- Evidence collection
-- Root cause analysis
-- Indicators of Compromise (IOCs)
-- MITRE ATT&CK mapping
-
-### Blue Team Operations
-
-- Credential access hunting
-- Data collection detection
-- Exfiltration investigation
-- Attack chain reconstruction
+| Domain | Skills |
+|---------|--------|
+| Linux Security | Auditd, SSH, Cron, Linux Administration |
+| Threat Hunting | Hypothesis Development, Log Analysis, IOC Identification |
+| Incident Response | Evidence Collection, Timeline Reconstruction |
+| Detection | Command Monitoring, Persistence Detection |
+| Frameworks | MITRE ATT&CK |
+| Documentation | Technical Reporting, Investigation Documentation |
 
 ---
 
 ## MITRE ATT&CK Coverage
 
-| Tactic | Techniques Practiced |
-|---------|----------------------|
-| Discovery | System Discovery, Network Discovery |
-| Persistence | Cron Jobs, SSH Authorized Keys |
-| Credential Access | Unsecured Credentials |
-| Collection | Local Data Collection, Archive Creation |
-| Exfiltration | Data Movement & Exfiltration Concepts |
+| ATT&CK Tactic | Techniques Practiced |
+|--------------|----------------------|
+| Discovery | T1033 – Account Discovery, T1082 – System Information Discovery |
+| Persistence | T1053.003 – Cron, T1098.004 – SSH Authorized Keys |
+| Credential Access | T1552 – Unsecured Credentials |
+| Collection | T1074 – Data Staged, T1560.001 – Archive via Utility |
+| Exfiltration | T1020 – Automated Exfiltration |
 
 ---
 
@@ -219,3 +237,25 @@ The next phase of this home lab will focus on Cloud & Platform Security, includi
 - Cloud Threat Hunting
 - Detection Engineering
 - Security Automation
+
+---
+## Portfolio
+
+This project is part of my cybersecurity learning journey focused on:
+
+- Blue Team Operations
+- Detection Engineering
+- Threat Hunting
+- Security Architecture
+- Cloud Security
+- Executive Cybersecurity Leadership
+  
+  More projects will be added as the journey progresses.
+
+---
+
+## Final Thoughts
+
+This project strengthened my practical understanding of Linux threat hunting, incident response, and attacker behavior analysis. Every lab was performed in a self-built home lab and documented to reinforce both technical skills and professional reporting.
+
+I hope this repository is useful to others who are learning Linux security and Blue Team operations.
